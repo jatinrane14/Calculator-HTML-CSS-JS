@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Page title</title>
+	<link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+	<section id="main-body">
+		<div class="circle">
+			<form name="form1" class="calci" action="index.html" method="POST">
+				<!--  -->
+				<input type="text" name="answer" id="screen" placeholder="0">
+				<br>
+				</br>
+				<!--  -->
+				<input type="button" class="btndesign orange" value="C" onclick="form1.answer.value=''">
+
+				<!--BACKSPACEBTN  -->
+				<input type="button" class="btndesign orange" value='×'
+					onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)">
+
+
+				<input type="button" class="btndesign orange" value="%" onclick="form1.answer.value+='%'">
+				<input type="button" class="btn-toolbar orange" value="÷" onclick="form1.answer.value+='÷'">
+				<br>
+				</br>
+				<input type="button" class="btndesign" value="7" onclick="form1.answer.value+='7'">
+				<input type="button" class="btndesign" value="8" onclick="form1.answer.value+='8'">
+				<input type="button" class="btndesign" value="9" onclick="form1.answer.value+='9'">
+				<input type="button" class="btn-toolbar" value="×" onclick="form1.answer.value+='*'">
+				<br>
+				</br>
+				<input type="button" class="btndesign" value="4" onclick="form1.answer.value+='4'">
+				<input type="button" class="btndesign" value="5" onclick="form1.answer.value+='5'">
+				<input type="button" class="btndesign" value="6" onclick="form1.answer.value+='6'">
+				<input type="button" class="btn-toolbar" value="-" onclick="form1.answer.value+='-'">
+				<br>
+				</br>
+				<input type="button" class="btndesign" value="1" onclick="form1.answer.value+='1'">
+				<input type="button" class="btndesign" value="2" onclick="form1.answer.value+='2'">
+				<input type="button" class="btndesign" value="3" onclick="form1.answer.value+='3'">
+				<input type="button" class="btn-toolbar" value="+" onclick="form1.answer.value+='+'">
+				<br>
+				</br>
+				<input type="button" class="btndesign" value="." onclick="form1.answer.value+='7'">
+				<input type="button" class="btndesign" value="0" onclick="form1.answer.value+='0'">
+				<!-- Equal button -->
+				<input type="button" id="equalbtn" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
+			</form>
+		</div>
+	</section>
+</body>
+
+</html>
