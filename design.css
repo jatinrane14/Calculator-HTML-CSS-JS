@@ -31,7 +31,7 @@
 	position: absolute;
 	bottom: 236px;
 	left : 35vw;
-	box-shadow:15px 19px 95px 10px black;
+	box-shadow:40px 45px 88px -9px black;
 }
 #screen {
 	border: none;
@@ -67,7 +67,7 @@
 	margin-left: 10px;
 	box-sizing: 90px;
 	box-shadow:3px 3px 8px 1px gray;
-
+	font-size: medium;
 }
 .btn-toolbar {
 	border: none;
